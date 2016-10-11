@@ -1,0 +1,132 @@
+Data features
+=================
+
+The features selected for this database come from the accelerometer and gyroscope 3-axial raw signals tAcc-XYZ and tGyro-XYZ. These time domain signals (prefix 't' to denote time) were captured at a constant rate of 50 Hz. Then they were filtered using a median filter and a 3rd order low pass Butterworth filter with a corner frequency of 20 Hz to remove noise. Similarly, the acceleration signal was then separated into body and gravity acceleration signals (tBodyAcc-XYZ and tGravityAcc-XYZ) using another low pass Butterworth filter with a corner frequency of 0.3 Hz. 
+
+Subsequently, the body linear acceleration and angular velocity were derived in time to obtain Jerk signals (tBodyAccJerk-XYZ and tBodyGyroJerk-XYZ). Also the magnitude of these three-dimensional signals were calculated using the Euclidean norm (tBodyAccMag, tGravityAccMag, tBodyAccJerkMag, tBodyGyroMag, tBodyGyroJerkMag). 
+
+Finally a Fast Fourier Transform (FFT) was applied to some of these signals producing fBodyAcc-XYZ, fBodyAccJerk-XYZ, fBodyGyro-XYZ, fBodyAccJerkMag, fBodyGyroMag, fBodyGyroJerkMag. (Note the 'f' to indicate frequency domain signals). 
+
+These signals were used to estimate variables of the feature vector for each pattern:  
+'-XYZ' is used to denote 3-axial signals in the X, Y and Z directions.
+
+tBodyAcc-XYZ
+tGravityAcc-XYZ
+tBodyAccJerk-XYZ
+tBodyGyro-XYZ
+tBodyGyroJerk-XYZ
+tBodyAccMag
+tGravityAccMag
+tBodyAccJerkMag
+tBodyGyroMag
+tBodyGyroJerkMag
+fBodyAcc-XYZ
+fBodyAccJerk-XYZ
+fBodyGyro-XYZ
+fBodyAccMag
+fBodyAccJerkMag
+fBodyGyroMag
+fBodyGyroJerkMag
+
+The set of variables that were estimated from these signals and included in the dataset are: 
+
+mean(): Mean value
+std(): Standard deviation
+
+Additional vectors obtained by averaging the signals in a signal window sample. These are used on the angle() variable:
+
+gravityMean
+tBodyAccMean
+tBodyAccJerkMean
+tBodyGyroMean
+tBodyGyroJerkMean
+
+These data were collected from several subjects during different activities. The subjects are differentiated by a subjectid and the activities by an activity_id. The activity_id is described in the activity variable.
+
+The average of each of the variables described above was taken for each subject and activity to create the final variables as follows:                               
+ [4] "avg_tBodyAcc.mean...X"                   
+ [5] "avg_tBodyAcc.mean...Y"                   
+ [6] "avg_tBodyAcc.mean...Z"                   
+ [7] "avg_tBodyAcc.std...X"                    
+ [8] "avg_tBodyAcc.std...Y"                    
+ [9] "avg_tBodyAcc.std...Z"                    
+[10] "avg_tGravityAcc.mean...X"                
+[11] "avg_tGravityAcc.mean...Y"                
+[12] "avg_tGravityAcc.mean...Z"                
+[13] "avg_tGravityAcc.std...X"                 
+[14] "avg_tGravityAcc.std...Y"                 
+[15] "avg_tGravityAcc.std...Z"                 
+[16] "avg_tBodyAccJerk.mean...X"               
+[17] "avg_tBodyAccJerk.mean...Y"               
+[18] "avg_tBodyAccJerk.mean...Z"               
+[19] "avg_tBodyAccJerk.std...X"                
+[20] "avg_tBodyAccJerk.std...Y"                
+[21] "avg_tBodyAccJerk.std...Z"                
+[22] "avg_tBodyGyro.mean...X"                  
+[23] "avg_tBodyGyro.mean...Y"                  
+[24] "avg_tBodyGyro.mean...Z"                  
+[25] "avg_tBodyGyro.std...X"                   
+[26] "avg_tBodyGyro.std...Y"                   
+[27] "avg_tBodyGyro.std...Z"                   
+[28] "avg_tBodyGyroJerk.mean...X"              
+[29] "avg_tBodyGyroJerk.mean...Y"              
+[30] "avg_tBodyGyroJerk.mean...Z"              
+[31] "avg_tBodyGyroJerk.std...X"               
+[32] "avg_tBodyGyroJerk.std...Y"               
+[33] "avg_tBodyGyroJerk.std...Z"               
+[34] "avg_tBodyAccMag.mean.."                  
+[35] "avg_tBodyAccMag.std.."                   
+[36] "avg_tGravityAccMag.mean.."               
+[37] "avg_tGravityAccMag.std.."                
+[38] "avg_tBodyAccJerkMag.mean.."              
+[39] "avg_tBodyAccJerkMag.std.."               
+[40] "avg_tBodyGyroMag.mean.."                 
+[41] "avg_tBodyGyroMag.std.."                  
+[42] "avg_tBodyGyroJerkMag.mean.."             
+[43] "avg_tBodyGyroJerkMag.std.."              
+[44] "avg_fBodyAcc.mean...X"                   
+[45] "avg_fBodyAcc.mean...Y"                   
+[46] "avg_fBodyAcc.mean...Z"                   
+[47] "avg_fBodyAcc.std...X"                    
+[48] "avg_fBodyAcc.std...Y"                    
+[49] "avg_fBodyAcc.std...Z"                    
+[50] "avg_fBodyAcc.meanFreq...X"               
+[51] "avg_fBodyAcc.meanFreq...Y"               
+[52] "avg_fBodyAcc.meanFreq...Z"               
+[53] "avg_fBodyAccJerk.mean...X"               
+[54] "avg_fBodyAccJerk.mean...Y"               
+[55] "avg_fBodyAccJerk.mean...Z"               
+[56] "avg_fBodyAccJerk.std...X"                
+[57] "avg_fBodyAccJerk.std...Y"                
+[58] "avg_fBodyAccJerk.std...Z"                
+[59] "avg_fBodyAccJerk.meanFreq...X"           
+[60] "avg_fBodyAccJerk.meanFreq...Y"           
+[61] "avg_fBodyAccJerk.meanFreq...Z"           
+[62] "avg_fBodyGyro.mean...X"                  
+[63] "avg_fBodyGyro.mean...Y"                  
+[64] "avg_fBodyGyro.mean...Z"                  
+[65] "avg_fBodyGyro.std...X"                   
+[66] "avg_fBodyGyro.std...Y"                   
+[67] "avg_fBodyGyro.std...Z"                   
+[68] "avg_fBodyGyro.meanFreq...X"              
+[69] "avg_fBodyGyro.meanFreq...Y"              
+[70] "avg_fBodyGyro.meanFreq...Z"              
+[71] "avg_fBodyAccMag.mean.."                  
+[72] "avg_fBodyAccMag.std.."                   
+[73] "avg_fBodyAccMag.meanFreq.."              
+[74] "avg_fBodyBodyAccJerkMag.mean.."          
+[75] "avg_fBodyBodyAccJerkMag.std.."           
+[76] "avg_fBodyBodyAccJerkMag.meanFreq.."      
+[77] "avg_fBodyBodyGyroMag.mean.."             
+[78] "avg_fBodyBodyGyroMag.std.."              
+[79] "avg_fBodyBodyGyroMag.meanFreq.."         
+[80] "avg_fBodyBodyGyroJerkMag.mean.."         
+[81] "avg_fBodyBodyGyroJerkMag.std.."          
+[82] "avg_fBodyBodyGyroJerkMag.meanFreq.."     
+[83] "avg_angle.tBodyAccMean.gravity."         
+[84] "avg_angle.tBodyAccJerkMean..gravityMean."
+[85] "avg_angle.tBodyGyroMean.gravityMean."    
+[86] "avg_angle.tBodyGyroJerkMean.gravityMean."
+[87] "avg_angle.X.gravityMean."                
+[88] "avg_angle.Y.gravityMean."                
+[89] "avg_angle.Z.gravityMean."
