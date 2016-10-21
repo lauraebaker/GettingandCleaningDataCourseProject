@@ -1,7 +1,8 @@
 # GettingandCleaningDataCourseProject
 
 Prerequisites: 
-  This project takes data that was collected from the accelerometers from the Samsung Galaxy S smartphone and processes for particular outcome. A full description of the original dataset is available at the site where the data was obtained:
+
+This project takes data that was collected from the accelerometers from the Samsung Galaxy S smartphone and processes for particular outcome. A full description of the original dataset is available at the site where the data was obtained:
 
   http://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartphones
 
