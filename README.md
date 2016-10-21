@@ -2,17 +2,17 @@
 
 Prerequisites: 
 
--This project takes data that was collected from the accelerometers from the Samsung Galaxy S smartphone and processes it for a particular outcome. A full description of the original dataset is available at the site where the data was obtained:
+- This project takes data that was collected from the accelerometers from the Samsung Galaxy S smartphone and processes it for a particular outcome. A full description of the original dataset is available at the site where the data was obtained:
 
   http://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartphones
 
-  -The original dataset can be found at:
+  - The original dataset can be found at:
 
   https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip
 
-  -The script requires that you have downloaded and unzipped the dataset above.
+  - The script requires that you have downloaded and unzipped the dataset above.
 
-  -It also assumes you are in the directory containing the unzipped folder and that it is named "UCI_HAR_Dataset".
+  - It also assumes you are in the directory containing the unzipped folder and that it is named "UCI_HAR_Dataset".
 
 Script:
 
@@ -30,6 +30,6 @@ Script:
  
 Output:
 
--The script outputs a file called "getcleandataproject.txt".
+- The script outputs a file called "getcleandataproject.txt".
 
--A description of the variables in this file can be found in the "Codebook.txt" file.
+- A description of the variables in this file can be found in the "Codebook.txt" file.
