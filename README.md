@@ -13,7 +13,7 @@ Preprocessing Requirements
 
 - Download the original dataset:
 
-https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip
+  https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip
 
 - Unzip the dataset above so that it creates a folder named "UCI_HAR_Dataset".
 
