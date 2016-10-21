@@ -1,16 +1,16 @@
 #Load necessary packages
 library(dplyr)
-setwd("/Users/lauraebaker/Dropbox/Personal/Education/Coursera/RDataScience/DataCleaning")
+## Don't forget to set your working directory: setwd()
   
 #Label the data set with descriptive variable names.
   #read the feature and activity names into R
   features<-read.table('./UCI_HAR_Dataset/features.txt',sep=" ")
   activity_labels<-read.table('./UCI_HAR_Dataset/activity_labels.txt',sep=" ",col.names=c("activity_id","activity"))
 
-  #define the column size for the x data
+#Define the column size for importing the fixed width x data
   fixedlenx<-rep(16,561)
   
-  #Task 4: load the test and train data with variable names including activities and subjectids
+#Task 4: load the test and train data with variable names including activities and subjectids
   xtest<-read.fwf('./UCI_HAR_Dataset/test/X_test.txt',fixedlenx,col.names=features$V2)
   ytest<-read.fwf('./UCI_HAR_Dataset/test/y_test.txt',2,col.names=c("activity_id"))
   subjtest<-read.fwf('./UCI_HAR_Dataset/test/subject_test.txt',2,col.names=c("subjectid"))
@@ -18,7 +18,7 @@ setwd("/Users/lauraebaker/Dropbox/Personal/Education/Coursera/RDataScience/DataC
   ytrain<-read.fwf('./UCI_HAR_Dataset/train/y_train.txt',2,col.names=c("activity_id"))
   subjtrain<-read.fwf('./UCI_HAR_Dataset/train/subject_train.txt',2,col.names=c("subjectid"))
 
-  #Task 1: Merge the training and the test sets to create one data set.  
+#Task 1: Merge the training and the test sets to create one data set.  
   allx<-rbind(xtest,xtrain)
   ally<-rbind(ytest,ytrain)
   allsubj<-rbind(subjtest,subjtrain)
