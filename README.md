@@ -1,34 +1,40 @@
 # Getting and Cleaning Data Course Project
 
-Prerequisites
--------------
+Overview
+--------
 
-- This project takes data that was collected from the accelerometers from the Samsung Galaxy S smartphone and processes it for a particular outcome. A full description of the original dataset is available at the site where the data was obtained:
+- This project takes data that was collected from the accelerometers of a Samsung Galaxy S smartphone and creates table data averaging the mean and standard deviation of select data for each research subject and activity.
+
+Preprocessing Requirements
+--------------------------
+-  Read the full description of the original dataset, which is available here:
 
   http://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartphones
 
-- The original dataset can be found at:
+- Download the original dataset:
 
 https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip
 
-- The script requires that you have downloaded and unzipped the dataset above.
+- Unzip the dataset above so that it creates a folder named "UCI_HAR_Dataset".
 
-- It also assumes you are in the directory containing the unzipped folder and that it is named "UCI_HAR_Dataset".
+- Set your R working directory to point to the folder containing the "UCI_HAR_Dataset".
 
-Script
-------
+- Run the run_analysis.R script
 
-  The run_analysis.R script performs the tasks:
+Script Functions
+----------------
 
-  1. Merges the training and the test sets to create one data set.
+  The run_analysis.R script performs the following tasks:
+
+  1. Merges the training and the test data sets to create one data set.
 
   2. Extracts only the measurements on the mean and standard deviation for each measurement.
 
-  3. Uses descriptive activity names to name the activities in the data set.
+  3. Provides the descriptive activity name for each activity code in the data set.
 
   4. Appropriately labels the data set with descriptive variable names.
 
-  5. From the data set in step 4, creates a second, independent tidy data set with the average of each variable for each activity and each   subject.
+  5. Creates a second, independent tidy data set with the average of each variable described above for each activity and each subject.
  
 Output
 ------
